@@ -27,11 +27,15 @@ public class detail extends AppCompatActivity {
         if(kgg.equals("G")){
             brt/=1000;
         }
+        brt = Math.round(brt * 100) / 100.0f; // Round to two decimal places
+
         if(cmm.equals("CM")){
             tnggi/=100;
         }
+        tnggi = Math.round(tnggi * 100) / 100.0f; // Round to two decimal places
 
         BMI=brt/(tnggi*tnggi);
+        BMI = Math.round(BMI * 100) / 100.0f; // Round to two decimal places
 
         if (BMI<=18.49)
         {
